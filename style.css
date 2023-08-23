@@ -1,0 +1,426 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 10px;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+p{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    color: black;
+}
+
+/*Header section starts*/
+#header{
+    /*position: fixed;*/
+    left: 0;
+    top: 0;
+    /* width: 100vw; */
+    height: auto;
+}
+
+#header .nav-head{
+    min-height: 15vh;
+    background-color: transparent;
+}
+
+#header .nav-items{
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .nav-logo{
+    font-size: 3rem;
+
+}
+#header .nav-links{
+    display: none;
+}
+#header .nav-links ul{
+    display: flex;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+#header .nav-links ul a{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(120, 120, 217);
+    padding: 5px 15px;
+    margin: 0 20px;
+    border-radius: 2px;
+    font-weight: 900;
+    
+}
+#header #contact-link a{
+    border: 2px solid rgb(120, 120, 217);
+    color: white;
+    background-color: rgb(120, 120, 217);
+}
+#header #contact-link a:hover{
+    
+    color: rgb(120, 120, 217);
+    background-color: white;
+}
+/*Header section closed*/
+
+/*Hero section starts*/
+#hero{
+    top: 0;
+    left: 0;
+    /* width: 100%; */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    
+}
+#hero .hero-items{
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+#hero .hero .hero-img{
+    /* width: 70%; */
+    margin: 0;
+}
+#hero .hero .hero-img img{
+    border-radius: 50%;
+    width: 300px;
+    border: 4px solid rgb(120, 120, 217);
+}
+#hero .hero-name{
+    margin-top: 20px 0;
+    padding-top: 30px;
+    font-size: 2rem;
+    justify-content: center;
+    margin: 10px;
+}
+#hero .hero-position{
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    color: rgb(120, 120, 217);
+}
+/*Hero section-closed*/
+
+/*Main(work) Section starts*/
+#mywork .mywork{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#mywork .work-title{
+    font-size: 2rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+#mywork .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+#mywork .card-item{
+    min-height: 300px;
+    flex-basis: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 5%;
+    position: relative;
+    border: 4px solid black;
+}
+#mywork .card-item h2{
+    font-size: 3rem;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+#mywork .card-item p{
+    font-size: 2rem;
+    text-align: justify;
+    
+}
+#mywork .card-item a{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 100%;
+    font-size: 2.5rem;
+    padding: 10px 0;
+    margin: 20px 0 10px 0;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+#mywork .card-item a:hover{
+    background-color: rgb(120, 120, 217);
+    
+}
+/*main(work) section closed*/
+
+/*about section starts*/
+#about .about{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+#about .about-item{
+    min-height: 200px;
+    flex-basis: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+    margin: 10px 5%;
+}
+#about .about-items .about-description{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#about .about-items h2{
+    padding: 10px 0;
+    margin: 0;
+    margin-bottom: 50px;
+    font-size: 3rem;
+}
+#about .about-item img{
+    max-width: 400px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+#about .about-item span{
+    font-weight: bold;
+    color: rgb(120, 120, 217);
+}
+#about .about-item p{
+    text-align: justify;
+    font-size: 2rem;
+}
+/*About section closed*/
+
+/*Contact and footer section starts*/
+#contact .contact{
+    display: flex;
+    flex-direction: column;
+    max-width: 1500px;
+    text-align: center;
+    margin: 0 auto;
+}
+#contact .contact .contact-title{
+    font-size: 2rem;
+    max-width: 1500px;
+    margin: 50px auto;
+}
+#contact .contact-items{
+    min-height: 200px;
+    width: 80vw;
+    max-width: 1500px;
+    flex-basis: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    border: 4px solid black;
+    
+}
+#contact .contact-details h2{
+    font-size: 3rem;
+    margin: 0;
+    color: rgb(120, 120, 217);
+}
+#contact .contact-details p{
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+/*contact section closed*/
+
+/*footer section starts*/
+#footer .footer{
+    flex-direction: column;
+    max-width: 1500px;
+    text-align: center;
+    margin: 0 auto;
+}
+#footer .footer .footer-items{
+    min-height: 15vh;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15px;
+}
+
+#footer .footer .copyright p{
+    font-size: 2rem;
+}
+#footer .footer-links{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+#footer .footer .footer-links a{
+    font-size: 1.2rem;
+    
+}
+
+/*footer section closed*/
+
+@media (min-width: 768px){
+    /* reposnsive for tablet  */
+
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    /* header section starts  */
+    #header .nav-items{
+        width: 80vw;
+    }
+    #header .nav-links{
+        display: flex;
+    }
+    #header .nav-links .hidden-mob{
+        display: none;
+    }
+    /* headaer section close  */
+
+    /* hero section starts  */
+    #hero .hero-items{
+        height: 80vh;
+    }
+    /* hero contact close  */
+
+    /* contact section starts  */
+    #contact .contact-items{
+        width: 60vw;
+    }
+
+    /* contact section closed  */
+
+    /* footer section starts  */
+    #footer{
+        width: 80vw;
+    }
+    /* footer section close  */
+
+    /* responsvie for tablet devices closes  */
+}
+
+/* responsive for desktop or laptop starts  */
+
+@media (min-width: 1024px){
+    #header .nav-links .hidden-mob{
+        display: flex;
+
+    }
+    #hero .hero{
+        min-height: 60vh;
+    }
+    #hero .hero-items{
+        width: 100%;
+        height: 80vh;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    #hero .hero-img img{
+        width: 100px;
+    }
+
+    #hero .hero-name{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    #hero .hero-position{
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    #mywork .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        /* min-height: 450px;
+        flex-basis: 33%;
+        justify-content: flex-start;
+        align-content: flex-start; */
+
+    }
+
+    /* contact section starts  */
+    #contact .contact-items{
+        width: 40vw;
+    }
+
+    /* contact section closed  */
+
+    #footer .footer-links{
+        width: 30%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #footer .footer .footer-links a{
+        font-size: 2rem;
+        
+    }
+
+}
