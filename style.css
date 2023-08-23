@@ -234,6 +234,7 @@ p{
     margin: 20px 0;
 }
 #about .about-item span{
+    font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     color: rgb(120, 120, 217);
 }
@@ -272,6 +273,7 @@ p{
     
 }
 #contact .contact-details h2{
+    font-family: 'Courier New', Courier, monospace;
     font-size: 3rem;
     margin: 0;
     color: rgb(120, 120, 217);
